@@ -4,6 +4,8 @@ import 'package:flutter_application_1/pages/profile.dart';
 import 'package:flutter_application_1/pages/articles.dart';
 import 'package:flutter_application_1/pages/calendar.dart';
 
+import 'package:flutter_application_1/widgets/bottom_nav.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -23,7 +25,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -50,19 +51,9 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: _selectedIndex,
+      bottomNavigationBar: BottomNavBar(
+        selectedIndex: _selectedIndex,
         onTap: _navigateBottomBar,
-        selectedItemColor: Colors.amber[800], // Active tab color
-        unselectedItemColor: Colors.grey, // Inactive tab color
-        backgroundColor: Colors.amber[50], // Background color of navbar
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: "Calendar"),
-          BottomNavigationBarItem(icon: Icon(Icons.article), label: "Articles"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-        ],
       ),
     );
   }
@@ -83,4 +74,5 @@ class FloatingCSButton extends StatelessWidget {
           child: Icon(Icons.add, color: Colors.black), // Custom icon
         )
     );
-  }}
+  }
+}
