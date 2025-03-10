@@ -1,6 +1,7 @@
 # flutter_application_1
 
 App name : CommunityBite
+
 Free Nutritious Meals: Help communities access and manage free nutritious food programs efficiently.
 
 ## Getting Started
