@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Nama Aplikasi',
       theme: ThemeData(
-        primaryColor: Colors.amber,
+        primaryColor: Colors.amber[800],
       ),
       home: MainScreen(),
     );

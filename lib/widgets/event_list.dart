@@ -23,7 +23,7 @@ class EventList extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 6,
             offset: const Offset(0, 3),
           ),
@@ -34,9 +34,9 @@ class EventList extends StatelessWidget {
         children: [
           // Time Box
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.grey[300],
+              color: Colors.lime[100],
               borderRadius: BorderRadius.circular(8),
             ),
             child: Text(

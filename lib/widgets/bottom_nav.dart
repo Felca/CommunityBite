@@ -16,9 +16,8 @@ class BottomNavBar extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
       currentIndex: selectedIndex,
       onTap: onTap,
-      selectedItemColor: Colors.amber[800],
+      selectedItemColor: Colors.green[800],
       unselectedItemColor: Colors.grey,
-      backgroundColor: Colors.amber[50],
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
         BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: "Calendar"),
