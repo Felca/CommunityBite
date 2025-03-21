@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
           fontWeight: FontWeight.w800,
           letterSpacing: 5
         ),
-        centerTitle: false,
+        centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 67, 160, 72),
       ),
 
